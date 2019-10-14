@@ -1,4 +1,4 @@
-var VERSION_NUMBER = '0.2.1_1';
+var VERSION_NUMBER = '0.2.1_2';
 
 Package.describe({
   name: 'lai:collection-extensions',
@@ -19,7 +19,7 @@ Package.onUse(function (api) {
   api.addFiles = api.addFiles || api.add_files;     // backwards-compat
   
   if (api.versionsFrom) { // 0.9.3+ litmus test
-    api.versionsFrom('0.9.3');
+    api.versionsFrom('1.8.1');
 
     api.use([
       'mongo',
@@ -44,7 +44,7 @@ Package.onUse(function (api) {
 
   api.export('CollectionExtensions');
 });
-
+/*
 Package.onTest(function(api) {
   api.use([
     'accounts-base',
@@ -69,3 +69,4 @@ Package.onTest(function(api) {
     'tests/tests.coffee'
   ]);
 });
+*/
