@@ -19,7 +19,7 @@ Package.onUse(function (api) {
   api.addFiles = api.addFiles || api.addFiles;     // backwards-compat
 
   if (api.versionsFrom) { // 0.9.3+ litmus test
-    api.versionsFrom('2.4');
+    api.versionsFrom('2.5');
 
     api.use([
       'mongo',
