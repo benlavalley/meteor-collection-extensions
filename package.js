@@ -13,7 +13,7 @@ Package.describe({
 });
 
 Package.onUse = Package.onUse || Package.onUse;    // backwards-compat
-Package.onTest = Package.onTest || Package.on_test; // backwards-compat
+Package.onTest = Package.onTest || Package.onTest; // backwards-compat
 
 Package.onUse(function (api) {
   api.addFiles = api.addFiles || api.addFiles;     // backwards-compat
