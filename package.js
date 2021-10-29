@@ -16,10 +16,10 @@ Package.onUse = Package.onUse || Package.on_use;    // backwards-compat
 Package.onTest = Package.onTest || Package.on_test; // backwards-compat
 
 Package.onUse(function (api) {
-  api.addFiles = api.addFiles || api.add_files;     // backwards-compat
-  
+  api.addFiles = api.addFiles || api.addFiles;     // backwards-compat
+
   if (api.versionsFrom) { // 0.9.3+ litmus test
-    api.versionsFrom('1.8.1');
+    api.versionsFrom('2.4');
 
     api.use([
       'mongo',
@@ -37,7 +37,7 @@ Package.onUse(function (api) {
   ]);
 
   api.use(['accounts-base'], ['client', 'server'], { weak: true });
-  
+
   api.addFiles([
     'collection-extensions.js'
   ]);
