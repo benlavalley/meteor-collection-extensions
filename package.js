@@ -12,7 +12,7 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Package.onUse = Package.onUse || Package.on_use;    // backwards-compat
+Package.onUse = Package.onUse || Package.onUse;    // backwards-compat
 Package.onTest = Package.onTest || Package.on_test; // backwards-compat
 
 Package.onUse(function (api) {
